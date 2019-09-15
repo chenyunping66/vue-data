@@ -7,7 +7,9 @@
  -->
 <template>
   <div class="hello">
-    <date-picker :value="now"></date-picker>
+    <!-- <date-picker :value="now" @input="val=>value=val"></date-picker> -->
+    <date-picker v-model="now"></date-picker>
+
     <!-- <div id="this_map_id" style="width:500px;height:400px">
     </!-->
   </div>
