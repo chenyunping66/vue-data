@@ -7,7 +7,7 @@
  -->
 <template>
   <div v-click-outside>
-    <input type="text" :value="formatDate">
+    <input type="text" :value="formatDate" class="input">
     <div class="pannel" v-if="isVisible">
       <div class="pannel-nav">
         <span>&lt;</span>
@@ -178,6 +178,11 @@ export default {
 }
 </script>
 <style scoped lang="stylus">
+.input {
+  float: left;
+  margin-top: -24px;
+}
+
 .pannel {
   width: 32 * 7px;
   // position: absolute;
